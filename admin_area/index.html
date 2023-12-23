@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto" rel="stylesheet">
+  <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/2484/9148/files/SDQSDSQ_32x32.png?v=1511436147" type="image/png">
+  <title>Hexa Shop</title>
+  <link href="../styles/bootstrap.min.css" rel="stylesheet">
+  <link href="../styles/backend.css" rel="stylesheet">
+  <link href="../styles/style.css" rel="stylesheet">
+
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="js/bootstrap.min.js" />
+  <link rel="stylesheet" href="js/jquery.min.js" />
+ 
+</head>
+
+
+<body>
+  <div class="container-scroller">
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" ><!-- navbar navbar-inverse navbar-fixed-top Starts -->
+
+<div class="navbar-header" ><!-- navbar-header Starts -->
+
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" ><!-- navbar-ex1-collapse Starts -->
+
+
+<span class="sr-only" >Toggle Navigation</span>
+
+<span class="icon-bar" ></span>
+
+<span class="icon-bar" ></span>
+
+<span class="icon-bar" ></span>
+
+
+</button><!-- navbar-ex1-collapse Ends -->
+
+<a class="navbar-brand" href="index.php?dashboard" >Admin Panel</a>
+
+
+</div><!-- navbar-header Ends -->
+
+<ul class="nav navbar-right top-nav" ><!-- nav navbar-right top-nav Starts -->
+
+<li class="dropdown" ><!-- dropdown Starts -->
+
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" ><!-- dropdown-toggle Starts -->
+
+<i class="fa fa-user" ></i>
+ <b class="caret" ></b>
+
+
+</a><!-- dropdown-toggle Ends -->
+
+<ul class="dropdown-menu" ><!-- dropdown-menu Starts -->
+
+<li><!-- li Starts -->
+
+<a href="index.php?user_profile=" >
+
+<i class="fa fa-fw fa-user" ></i> Profile
+
+
+</a>
+
+</li><!-- li Ends -->
+
+<li><!-- li Starts -->
+
+<a href="index.php?view_products" >
+
+<i class="fa fa-fw fa-envelope" ></i> Products 
+
+<span class="badge" ></span>
+
+
+</a>
+
+</li><!-- li Ends -->
+
+<li><!-- li Starts -->
+
+<a href="index.php?view_customers" >
+
+<i class="fa fa-fw fa-gear" ></i> Customers
+
+<span class="badge" ></span>
+
+
+</a>
+
+</li><!-- li Ends -->
+
+<li><!-- li Starts -->
+
+<a href="index.php?view_p_cats" >
+
+<i class="fa fa-fw fa-gear" ></i> Product Categories
+
+<span class="badge" ></span>
+
+
+</a>
+
+</li><!-- li Ends -->
+
+<li class="divider"></li>
+
+<li><!-- li Starts -->
+
+<a href="logout.php">
+
+<i class="fa fa-fw fa-power-off"> </i> Log Out
+
+</a>
+
+</li><!-- li Ends -->
+
+</ul><!-- dropdown-menu Ends -->
+
+
+
+
+</li><!-- dropdown Ends -->
+
+
+</ul><!-- nav navbar-right top-nav Ends -->
+
+<div class="collapse navbar-collapse navbar-ex1-collapse"><!-- collapse navbar-collapse navbar-ex1-collapse Starts -->
+
+<ul class="nav navbar-nav side-nav"><!-- nav navbar-nav side-nav Starts -->
+
+<li><!-- li Starts -->
+
+<a href="index.php?dashboard">
+
+<i class="fa fa-fw fa-dashboard"></i> Dashboard
+
+</a>
+
+</li><!-- li Ends -->
+
+<li><!-- Products li Starts -->
+
+<a href="#" data-toggle="collapse" data-target="#products">
+
+<i class="fa fa-fw fa-table"></i> Products
+
+<i class="fa fa-fw fa-caret-down"></i>
+
+
+</a>
+
+<ul id="products" class="collapse">
+
+<li>
+<a href="index.php?insert_product"> Insert Products </a>
+</li>
+
+<li>
+<a href="index.php?view_products"> View Products </a>
+</li>
+
+
+</ul>
+
+</li><!-- Products li Ends -->
+
+<li><!-- Bundles Li Starts --->
+
+
+
+<li><!-- manufacturer li Starts -->
+
+<a href="#" data-toggle="collapse" data-target="#manufacturers"><!-- anchor Starts -->
+
+<i class="fa fa-fw fa-briefcase"></i> Manufacturers
+
+<i class="fa fa-fw fa-caret-down"></i>
+
+
+</a><!-- anchor Ends -->
+
+<ul id="manufacturers" class="collapse"><!-- ul collapse Starts -->
+
+<li>
+<a href="index.php?insert_manufacturer"> Insert Manufacturer </a>
+</li>
+
+<li>
+<a href="index.php?view_manufacturers"> View Manufacturers </a>
+</li>
+
+</ul><!-- ul collapse Ends -->
+
+
+</li><!-- manufacturer li Ends -->
+
+
+<li><!-- li Starts -->
+
+<a href="#" data-toggle="collapse" data-target="#p_cat">
+
+<i class="fa fa-fw fa-pencil"></i> Products Categories
+
+<i class="fa fa-fw fa-caret-down"></i>
+
+
+</a>
+
+<ul id="p_cat" class="collapse">
+
+<li>
+<a href="index.php?insert_p_cat"> Insert Product Category </a>
+</li>
+
+<li>
+<a href="index.php?view_p_cats"> View Products Categories </a>
+</li>
+
+
+</ul>
+
+</li><!-- li Ends -->
+
+
+<li><!-- li Starts -->
+
+<a href="#" data-toggle="collapse" data-target="#cat">
+
+<i class="fa fa-fw fa-arrows-v"></i> Categories
+
+<i class="fa fa-fw fa-caret-down"></i>
+
+</a>
+
+<ul id="cat" class="collapse">
+
+<li>
+<a href="index.php?insert_cat"> Insert Category </a>
+</li>
+
+<li>
+<a href="index.php?view_cats"> View Categories </a>
+</li>
+
+
+</ul>
+
+</li><!-- li Ends -->
+
+
+
+<li><!-- store section li Starts -->
+
+<a href="#" data-toggle="collapse" data-target="#store">
+
+<i class="fa fa-fw fa-briefcase"></i> Stores
+
+<i class="fa fa-fw fa-caret-down"></i>
+
+</a>
+
+<ul id="store" class="collapse">
+
+<li>
+<a href="index.php?insert_store"> Insert store </a>
+</li>
+
+<li>
+<a href="index.php?view_store"> View store </a>
+</li>
+
+</ul>
+
+</li><!-- store section li Ends -->
+
+
+<li><!-- contact us li Starts -->
+
+<a href="#" data-toggle="collapse" data-target="#contact_us"><!-- anchor Starts -->
+
+<i class="fa fa-fw fa-pencil"> </i> Contact Us Section
+
+<i class="fa fa-fw fa-caret-down"></i>
+
+</a><!-- anchor Ends -->
+
+<ul id="contact_us" class="collapse">
+
+<li>
+
+<a href="index.php?edit_contact_us"> Edit Contact Us </a>
+
+</li>
+
+
+</ul>
+
+</li><!-- contact us li Ends -->
+
+<li><!-- about us li Starts -->
+
+<a href="index.php?edit_about_us">
+
+<i class="fa fa-fw fa-edit"></i> Edit About Us Page
+
+</a>
+
+</li><!-- about us li Ends -->
+
+
+
+
+
+
+
+
+
+<li>
+
+<a href="index.php?view_customers">
+
+<i class="fa fa-fw fa-edit"></i> View Customers
+
+</a>
+
+</li>
+
+<li>
+
+<a href="index.php?view_orders">
+
+<i class="fa fa-fw fa-list"></i> View Orders
+
+</a>
+
+</li>
+
+<li>
+
+<a href="index.php?view_payments">
+
+<i class="fa fa-fw fa-pencil"></i> View Payments
+
+</a>
+
+</li>
+
+<li><!-- li Starts -->
+
+<a href="#" data-toggle="collapse" data-target="#users">
+
+<i class="fa fa-fw fa-gear"></i> Users
+
+<i class="fa fa-fw fa-caret-down"></i>
+
+
+</a>
+
+<ul id="users" class="collapse">
+
+<li>
+<a href="index.php?insert_user"> Insert User </a>
+</li>
+
+<li>
+<a href="index.php?view_users"> View Users </a>
+</li>
+
+<li>
+<a href="index.php?user_profile=<?php echo $admin_id; ?>"> Edit Profile </a>
+</li>
+
+</ul>
+
+</li><!-- li Ends -->
+
+<li><!-- li Starts -->
+
+<a href="logout.php">
+
+<i class="fa fa-fw fa-power-off"></i> Log Out
+
+</a>
+
+</li><!-- li Ends -->
+
+</ul><!-- nav navbar-nav side-nav Ends -->
+
+
+
+
+
+</div><!-- collapse navbar-collapse navbar-ex1-collapse Ends -->
+
+
+
+
+
+
+
+</nav><!-- navbar navbar-inverse navbar-fixed-top Ends -->
+
+
+
+      <div class="container-fluid page-body-wrapper">
+
+    <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+
+
+
+<div class="row"><!-- 1 row Starts -->
+
+<div class="col-lg-12"><!-- col-lg-12 Starts -->
+
+<!-- <h1 class="page-header">Dashboard</h1> -->
+
+<ol class="breadcrumb"><!-- breadcrumb Starts -->
+
+<li class="active">
+
+<i class="fa fa-dashboard"></i> Dashboard
+
+</li>
+
+</ol><!-- breadcrumb Ends -->
+
+</div><!-- col-lg-12 Ends -->
+
+</div><!-- 1 row Ends -->
+
+
+<div class="row"><!-- 2 row Starts -->
+
+<div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
+
+<div class="panel panel-primary"><!-- panel panel-primary Starts -->
+
+<div class="panel-heading"><!-- panel-heading Starts -->
+
+<div class="row"><!-- panel-heading row Starts -->
+
+<div class="col-xs-3"><!-- col-xs-3 Starts -->
+
+<i class="fa fa-tasks fa-5x"> </i>
+
+</div><!-- col-xs-3 Ends -->
+
+<div class="col-xs-9 text-right"><!-- col-xs-9 text-right Starts -->
+
+<div class="huge"> </div>
+
+<div>Products</div>
+
+</div><!-- col-xs-9 text-right Ends -->
+
+</div><!-- panel-heading row Ends -->
+
+</div><!-- panel-heading Ends -->
+
+<a href="index.php?view_products">
+
+<div class="panel-footer"><!-- panel-footer Starts -->
+
+<span class="pull-left"> View Details </span>
+
+<span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
+
+<div class="clearfix"></div>
+
+</div><!-- panel-footer Ends -->
+
+</a>
+
+</div><!-- panel panel-primary Ends -->
+
+</div><!-- col-lg-3 col-md-6 Ends -->
+
+
+<div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
+
+<div class="panel panel-green"><!-- panel panel-green Starts -->
+
+<div class="panel-heading"><!-- panel-heading Starts -->
+
+<div class="row"><!-- panel-heading row Starts -->
+
+<div class="col-xs-3"><!-- col-xs-3 Starts -->
+
+<i class="fa fa-comments fa-5x"> </i>
+
+</div><!-- col-xs-3 Ends -->
+
+<div class="col-xs-9 text-right"><!-- col-xs-9 text-right Starts -->
+
+<div class="huge"> </div>
+
+<div>Customers</div>
+
+</div><!-- col-xs-9 text-right Ends -->
+
+</div><!-- panel-heading row Ends -->
+
+</div><!-- panel-heading Ends -->
+
+<a href="index.php?view_customers">
+
+<div class="panel-footer"><!-- panel-footer Starts -->
+
+<span class="pull-left"> View Details </span>
+
+<span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
+
+<div class="clearfix"></div>
+
+</div><!-- panel-footer Ends -->
+
+</a>
+
+</div><!-- panel panel-green Ends -->
+
+</div><!-- col-lg-3 col-md-6 Ends -->
+
+
+<div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
+
+<div class="panel panel-yellow"><!-- panel panel-yellow Starts -->
+
+<div class="panel-heading"><!-- panel-heading Starts -->
+
+<div class="row"><!-- panel-heading row Starts -->
+
+<div class="col-xs-3"><!-- col-xs-3 Starts -->
+
+<i class="fa fa-shopping-cart fa-5x"> </i>
+
+</div><!-- col-xs-3 Ends -->
+
+<div class="col-xs-9 text-right"><!-- col-xs-9 text-right Starts -->
+
+<div class="huge"></div>
+
+<div>Products Categories</div>
+
+</div><!-- col-xs-9 text-right Ends -->
+
+</div><!-- panel-heading row Ends -->
+
+</div><!-- panel-heading Ends -->
+
+<a href="index.php?view_p_cats">
+
+<div class="panel-footer"><!-- panel-footer Starts -->
+
+<span class="pull-left"> View Details </span>
+
+<span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
+
+<div class="clearfix"></div>
+
+</div><!-- panel-footer Ends -->
+
+</a>
+
+</div><!-- panel panel-yellow Ends -->
+
+</div><!-- col-lg-3 col-md-6 Ends -->
+
+
+<div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
+
+<div class="panel panel-red"><!-- panel panel-red Starts -->
+
+<div class="panel-heading"><!-- panel-heading Starts -->
+
+<div class="row"><!-- panel-heading row Starts -->
+
+<div class="col-xs-3"><!-- col-xs-3 Starts -->
+
+<i class="fa fa-support fa-5x"> </i>
+
+</div><!-- col-xs-3 Ends -->
+
+<div class="col-xs-9 text-right"><!-- col-xs-9 text-right Starts -->
+
+<div class="huge"></div>
+
+<div>Orders</div>
+
+</div><!-- col-xs-9 text-right Ends -->
+
+</div><!-- panel-heading row Ends -->
+
+</div><!-- panel-heading Ends -->
+
+<a href="index.php?view_orders">
+
+<div class="panel-footer"><!-- panel-footer Starts -->
+
+<span class="pull-left"> View Details </span>
+
+<span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
+
+<div class="clearfix"></div>
+
+</div><!-- panel-footer Ends -->
+
+</a>
+
+</div><!-- panel panel-red Ends -->
+
+</div><!-- col-lg-3 col-md-6 Ends -->
+
+
+</div><!-- 2 row Ends -->
+
+<div class="row">
+    <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
+
+        <div class="panel panel-success"><!-- panel panel-red Starts -->
+        
+        <div class="panel-heading"><!-- panel-heading Starts -->
+        
+        <div class="row"><!-- panel-heading row Starts -->
+        
+        <div class="col-xs-3"><!-- col-xs-3 Starts -->
+        
+        <i class="fa fa-dollar fa-5x"> </i>
+        
+        </div><!-- col-xs-3 Ends -->
+        
+        <div class="col-xs-9 text-right"><!-- col-xs-9 text-right Starts -->
+        
+        <div class="huge"> </div>
+        
+        <div>Earnings</div>
+        
+        </div><!-- col-xs-9 text-right Ends -->
+        
+        </div><!-- panel-heading row Ends -->
+        
+        </div><!-- panel-heading Ends -->
+        
+        <a href="index.php?view_orders">
+        
+        <div class="panel-footer"><!-- panel-footer Starts -->
+        
+        <span class="pull-left"> View Details </span>
+        
+        <span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
+        
+        <div class="clearfix"></div>
+        
+        </div><!-- panel-footer Ends -->
+        
+        </a>
+        
+        </div><!-- panel panel-red Ends -->
+        
+        </div><!-- col-lg-3 col-md-6 Ends -->
+
+
+        <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
+
+            <div class="panel panel-warning"><!-- panel panel-red Starts -->
+            
+            <div class="panel-heading"><!-- panel-heading Starts -->
+            
+            <div class="row"><!-- panel-heading row Starts -->
+            
+            <div class="col-xs-3"><!-- col-xs-3 Starts -->
+            
+            <i class="fa fa-spinner fa-5x"> </i>
+            
+            </div><!-- col-xs-3 Ends -->
+            
+            <div class="col-xs-9 text-right"><!-- col-xs-9 text-right Starts -->
+            
+            <div class="huge"></div>
+            
+            <div>Pending Orders</div>
+            
+            </div><!-- col-xs-9 text-right Ends -->
+            
+            </div><!-- panel-heading row Ends -->
+            
+            </div><!-- panel-heading Ends -->
+            
+            <a href="index.php?view_orders">
+            
+            <div class="panel-footer"><!-- panel-footer Starts -->
+            
+            <span class="pull-left"> View Details </span>
+            
+            <span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
+            
+            <div class="clearfix"></div>
+            
+            </div><!-- panel-footer Ends -->
+            
+            </a>
+            
+            </div><!-- panel panel-red Ends -->
+            
+            </div><!-- col-lg-3 col-md-6 Ends -->
+
+
+            <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
+
+                <div class="panel panel-info"><!-- panel panel-red Starts -->
+                
+                <div class="panel-heading"><!-- panel-heading Starts -->
+                
+                <div class="row"><!-- panel-heading row Starts -->
+                
+                <div class="col-xs-3"><!-- col-xs-3 Starts -->
+                
+                <i class="fa fa-check fa-5x"> </i>
+                
+                </div><!-- col-xs-3 Ends -->
+                
+                <div class="col-xs-9 text-right"><!-- col-xs-9 text-right Starts -->
+                
+                <div class="huge">  </div>
+                
+                <div>Completed Orders</div>
+                
+                </div><!-- col-xs-9 text-right Ends -->
+                
+                </div><!-- panel-heading row Ends -->
+                
+                </div><!-- panel-heading Ends -->
+                
+                <a href="index.php?view_orders">
+                
+                <div class="panel-footer"><!-- panel-footer Starts -->
+                
+                <span class="pull-left"> View Details </span>
+                
+                <span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
+                
+                <div class="clearfix"></div>
+                
+                </div><!-- panel-footer Ends -->
+                
+                </a>
+                
+                </div><!-- panel panel-red Ends -->
+                
+                </div><!-- col-lg-3 col-md-6 Ends -->
+
+
+
+                <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
+
+                    <div class="panel panel-danger"><!-- panel panel-red Starts -->
+                    
+                    <div class="panel-heading"><!-- panel-heading Starts -->
+                    
+                    <div class="row"><!-- panel-heading row Starts -->
+                    
+                    <div class="col-xs-3"><!-- col-xs-3 Starts -->
+                    
+                    <i class="fa fa-percent fa-5x"> </i>
+                    
+                    </div><!-- col-xs-3 Ends -->
+                    
+                    <div class="col-xs-9 text-right"><!-- col-xs-9 text-right Starts -->
+                    
+                    <div class="huge">  </div>
+                    
+                    <div>Total Coupons</div>
+                    
+                    </div><!-- col-xs-9 text-right Ends -->
+                    
+                    </div><!-- panel-heading row Ends -->
+                    
+                    </div><!-- panel-heading Ends -->
+                    
+                    <a href="index.php?view_orders">
+                    
+                    <div class="panel-footer"><!-- panel-footer Starts -->
+                    
+                    <span class="pull-left"> View Details </span>
+                    
+                    <span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
+                    
+                    <div class="clearfix"></div>
+                    
+                    </div><!-- panel-footer Ends -->
+                    
+                    </a>
+                    
+                    </div><!-- panel panel-red Ends -->
+                    
+                    </div><!-- col-lg-3 col-md-6 Ends -->
+</div>
+</div></div></nav>
+
+<div class="row" ><!-- 3 row Starts -->
+
+<div class="col-lg-12" ><!-- col-lg-8 Starts -->
+
+<div class="panel panel-primary" ><!-- panel panel-primary Starts -->
+
+<div class="panel-heading" ><!-- panel-heading Starts -->
+
+<h3 class="panel-title" ><!-- panel-title Starts -->
+
+<i class="fa fa-money fa-fw" ></i> New Orders
+
+</h3><!-- panel-title Ends -->
+
+</div><!-- panel-heading Ends -->
+
+<div class="panel-body" ><!-- panel-body Starts -->
+
+<div class="table-responsive" ><!-- table-responsive Starts -->
+
+<table class="table table-bordered table-hover table-striped" ><!-- table table-bordered table-hover table-striped Starts -->
+
+<thead><!-- thead Starts -->
+
+<tr>
+<th>Order #</th>
+<th>Customer</th>
+<th>Invoice No</th>
+<th>Product ID</th>
+<th>Qty</th>
+<th>Size</th>
+<th>Status</th>
+
+
+</tr>
+
+</thead><!-- thead Ends -->
+
+<tbody><!-- tbody Starts -->
+
+
+<tr>
+
+<td></td>
+
+<td>
+
+</td>
+
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+
+</td>
+
+</tr>
+
+
+</tbody><!-- tbody Ends -->
+
+
+</table><!-- table table-bordered table-hover table-striped Ends -->
+
+</div><!-- table-responsive Ends -->
+
+<div class="text-right" ><!-- text-right Starts -->
+
+<a href="index.php?view_orders" >
+
+View All Orders <i class="fa fa-arrow-circle-right" ></i>
+
+</a>
+
+</div><!-- text-right Ends -->
+
+
+</div><!-- panel-body Ends -->
+
+</div><!-- panel panel-primary Ends -->
+
+</div><!-- col-lg-8 Ends -->
+
+<div class="col-md-4"><!-- col-md-4 Starts -->
+
+<div class="panel"><!-- panel Starts -->
+
+
+
+</div><!-- panel Ends -->
+
+</div><!-- col-md-4 Ends -->
+
+</div><!-- 3 row Ends -->
+
+  
+
+</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="page-footer">
+
+  <div class="footer-nav">
+    <div class="container clearfix">
+
+      <div class="footer-nav__col footer-nav__col--info">
+        <div class="footer-nav__heading">Information</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">The brand</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Local stores</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Customer service</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Privacy &amp; cookies</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Site map</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-nav__col footer-nav__col--whybuy">
+        <div class="footer-nav__heading">Why buy from us</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Shipping &amp; returns</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Secure shipping</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Testimonials</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Award winning</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Ethical trading</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-nav__col footer-nav__col--account">
+        <div class="footer-nav__heading">Your account</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Sign in</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Register</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">View cart</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">View your lookbook</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Track an order</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Update information</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-nav__col footer-nav__col--lookbook">
+        <div class="footer-nav__heading">Lookbook</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Latest posts</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Men&apos;s lookbook</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Women&apos;s lookbook</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Lookbooks RSS feed</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">View your lookbook</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Delete your lookbook</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-nav__col footer-nav__col--contacts">
+        <div class="footer-nav__heading">Contact details</div>
+        <address class="address">
+        Head Office: Avenue Fashion.<br>
+        180-182 Regent Street, London.
+      </address>
+        <div class="phone">
+          Telephone:
+          <a class="phone__number" href="tel:0123456789">0123-456-789</a>
+        </div>
+        <div class="email">
+          Email:
+          <a href="mailto:support@yourwebsite.com" class="email__addr">support@yourwebsite.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="banners">
+    <div class="container clearfix">
+
+      <div class="banner-award">
+        <span>Award winner</span><br> Fashion awards 2016
+      </div>
+
+      <div class="banner-social">
+        <a href="#" class="banner-social__link">
+        <i class="icon-facebook"></i>
+      </a>
+        <a href="#" class="banner-social__link">
+        <i class="icon-twitter"></i>
+      </a>
+        <a href="#" class="banner-social__link">
+        <i class="icon-instagram"></i>
+      </a>
+        <a href="#" class="banner-social__link">
+        <i class="icon-pinterest-circled"></i>
+      </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="page-footer__subline">
+    <div class="container clearfix">
+
+      <div class="copyright">
+        &copy; 2016 Avenue Fashion&trade;
+      </div>
+
+      <div class="developer">
+        Dev by Loremipsum.com
+      </div>
+
+      <div class="designby">
+        Design by RobbyDesigns.com
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+</html>
